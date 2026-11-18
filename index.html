@@ -1,0 +1,204 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f6f7f3">
+  <meta name="description" content="Sardor Clean — профессиональная химчистка мягкой мебели с выездом на дом в Тольятти. Предварительная оценка стоимости по фото.">
+  <title>Sardor Clean — химчистка мебели в Тольятти</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root{--bg:#f6f7f3;--ink:#17211d;--muted:#68736d;--green:#315c49;--green2:#dce8df;--line:#e2e7e1;--white:#fff;--radius:22px;--shadow:0 18px 55px rgba(24,42,32,.09)}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--ink);font-family:"DM Sans",sans-serif}a{color:inherit;text-decoration:none}button,input,textarea,select{font:inherit}.wrap{width:min(1160px,calc(100% - 40px));margin:auto}
+    .topbar{padding:18px 0;border-bottom:1px solid var(--line);background:rgba(246,247,243,.9);position:sticky;top:0;z-index:10;backdrop-filter:blur(14px)}.nav{display:flex;align-items:center;justify-content:space-between;gap:24px}.brand{font:800 20px Manrope,sans-serif;letter-spacing:.09em}.brand span{color:var(--green)}.navlinks{display:flex;gap:27px;color:#4f5c55;font-size:14px}.navright{display:flex;align-items:center;gap:18px}.phone{font-weight:700;font-size:14px}.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;border:0;border-radius:999px;padding:15px 22px;background:var(--green);color:white;font-weight:700;cursor:pointer;transition:.22s;box-shadow:0 8px 20px rgba(49,92,73,.16)}.btn:hover{background:#244a38;transform:translateY(-2px);box-shadow:0 12px 25px rgba(49,92,73,.23)}.btn.light{background:white;color:var(--ink);box-shadow:none;border:1px solid var(--line)}.btn.light:hover{border-color:var(--green);color:var(--green)}.menu{display:none;background:none;border:0;font-size:25px}
+    .hero{padding:76px 0 68px;display:grid;grid-template-columns:1.02fr .98fr;align-items:center;gap:52px}.eyebrow{display:inline-flex;align-items:center;gap:9px;color:var(--green);font-size:12px;letter-spacing:.14em;text-transform:uppercase;font-weight:800}.dot{width:7px;height:7px;border-radius:50%;background:#7ba58a}.hero h1{font:800 clamp(42px,5.3vw,68px)/1.06 Manrope,sans-serif;letter-spacing:-.055em;margin:20px 0}.hero h1 em{font-style:normal;color:var(--green)}.lead{font-size:18px;line-height:1.7;color:var(--muted);max-width:540px}.hero-actions{display:flex;flex-wrap:wrap;gap:12px;margin:30px 0}.trustline{display:flex;flex-wrap:wrap;gap:18px;color:#66736b;font-size:13px}.trustline span:before{content:"✓";color:var(--green);font-weight:800;margin-right:7px}.hero-visual{min-height:490px;position:relative;border-radius:30px;overflow:hidden;background:linear-gradient(145deg,#dbe5dc,#aebfb1);box-shadow:var(--shadow)}.hero-visual img{width:100%;height:100%;position:absolute;inset:0;object-fit:cover}.hero-visual:after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,rgba(15,30,22,.35),transparent 55%)}.visual-note{position:absolute;z-index:1;bottom:25px;left:25px;color:white;font:700 17px Manrope}.visual-tag{position:absolute;z-index:1;right:22px;top:22px;background:rgba(255,255,255,.9);padding:11px 15px;border-radius:99px;font-size:12px;font-weight:700}
+    section{padding:76px 0}.section-head{display:flex;justify-content:space-between;align-items:end;gap:30px;margin-bottom:32px}.kicker{color:var(--green);font-size:12px;letter-spacing:.14em;text-transform:uppercase;font-weight:800}.section-head h2,.cta h2{font:800 clamp(30px,4vw,44px)/1.12 Manrope,sans-serif;letter-spacing:-.04em;margin:12px 0 0}.section-head p{max-width:440px;color:var(--muted);line-height:1.65;margin:0}
+    .services{display:grid;grid-template-columns:repeat(4,1fr);gap:15px}.service{background:white;border:1px solid var(--line);border-radius:var(--radius);padding:24px;min-height:190px;transition:.2s}.service:hover{transform:translateY(-4px);box-shadow:var(--shadow)}.service-icon{width:44px;height:44px;border-radius:14px;background:var(--green2);display:grid;place-items:center;color:var(--green);font-size:21px}.service h3{font:700 18px Manrope;margin:22px 0 8px}.service p{color:var(--muted);font-size:14px;line-height:1.55;margin:0}
+    .gallery{background:#edf1eb}.gallery-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}.gallery-card{background:white;border-radius:var(--radius);overflow:hidden;border:1px solid var(--line)}.gallery-pair{display:grid;grid-template-columns:1fr 1fr;min-height:220px}.photo-placeholder{display:flex;align-items:end;padding:16px;color:white;font-size:12px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;background:linear-gradient(145deg,#8d958d,#4f5c55);position:relative}.photo-placeholder.after{background:linear-gradient(145deg,#d5e0d6,#879e8d);color:#20372a}.gallery-info{padding:18px 20px}.gallery-info strong{font:700 16px Manrope}.gallery-info p{margin:6px 0 0;color:var(--muted);font-size:13px;line-height:1.5}.note{font-size:13px;color:var(--muted);margin-top:18px}
+    .steps{display:grid;grid-template-columns:repeat(4,1fr);gap:22px}.step{border-top:1px solid #cbd6cd;padding-top:20px}.step-num{font:800 13px Manrope;color:var(--green)}.step h3{font:700 17px Manrope;margin:12px 0 8px}.step p{font-size:14px;line-height:1.6;color:var(--muted);margin:0}
+    .why{background:#17251e;color:white}.why .section-head p{color:#b8c5bc}.why .kicker{color:#a9cbb4}.why-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}.why-card{border:1px solid rgba(255,255,255,.15);border-radius:18px;padding:22px}.why-card b{font:700 16px Manrope}.why-card p{color:#bdc9c0;font-size:13px;line-height:1.6;margin-bottom:0}
+    .faq-grid{display:grid;grid-template-columns:.75fr 1.25fr;gap:60px}.faq-grid h2{font:800 40px Manrope;letter-spacing:-.04em;margin:12px 0}.faq-list details{border-bottom:1px solid var(--line);padding:18px 0}.faq-list summary{cursor:pointer;list-style:none;font-weight:700;display:flex;justify-content:space-between;gap:20px}.faq-list summary:after{content:"+";color:var(--green);font-size:20px}.faq-list details[open] summary:after{content:"−"}.faq-list p{color:var(--muted);line-height:1.65;font-size:14px;max-width:650px}
+    .contact{padding-top:20px}.contact-panel{background:var(--green2);border-radius:30px;padding:48px;display:grid;grid-template-columns:.9fr 1.1fr;gap:50px}.contact-panel h2{font:800 38px/1.1 Manrope;letter-spacing:-.04em;margin:12px 0}.contact-panel p{color:#53645a;line-height:1.65}.contact-links{display:flex;flex-direction:column;gap:13px;margin-top:24px;font-weight:700}.contact-links a{display:flex;gap:10px;align-items:center}.form{background:white;padding:26px;border-radius:22px;box-shadow:0 12px 35px rgba(25,48,34,.07)}.form h3{font:700 20px Manrope;margin:0 0 18px}.field{display:flex;flex-direction:column;gap:7px;margin-bottom:13px}.field label{font-size:12px;font-weight:700;color:#58645d}.field input,.field textarea,.field select{border:1px solid var(--line);background:#fbfcfa;border-radius:12px;padding:13px 14px;outline:none;width:100%;color:var(--ink)}.field input:focus,.field textarea:focus,.field select:focus{border-color:#7b9d87}.field textarea{resize:vertical;min-height:80px}.form .btn{width:100%}.fineprint{font-size:11px!important;color:#7b867f!important;line-height:1.5!important;margin:12px 0 0}
+    footer{padding:28px 0 36px;color:#77827b;font-size:12px}.footer-inner{display:flex;justify-content:space-between;gap:20px;align-items:center}.footer-brand{font:800 16px Manrope;letter-spacing:.08em;color:var(--ink)}
+    .mobile-cta{display:none}
+    #snow{position:fixed;inset:0;width:100%;height:100%;pointer-events:none;z-index:9999}
+    @media(max-width:900px){.navlinks{display:none}.hero{grid-template-columns:1fr;gap:30px;padding-top:55px}.hero-visual{min-height:380px}.services,.why-grid{grid-template-columns:repeat(2,1fr)}.steps{grid-template-columns:repeat(2,1fr)}.contact-panel{grid-template-columns:1fr;gap:25px}.faq-grid{grid-template-columns:1fr;gap:20px}}
+    @media(max-width:600px){.wrap{width:min(100% - 30px,1160px)}.topbar{padding:13px 0}.phone{display:none}.navright .btn{padding:11px 15px;font-size:12px}.hero{padding:44px 0 45px}.hero h1{font-size:43px}.lead{font-size:16px}.hero-visual{min-height:300px}.hero-actions .btn{width:100%}section{padding:55px 0}.section-head{display:block}.section-head p{margin-top:13px}.services{grid-template-columns:1fr 1fr;gap:10px}.service{padding:17px;min-height:180px}.service h3{font-size:15px;margin-top:16px}.service p{font-size:12px}.gallery-grid{grid-template-columns:1fr}.gallery-pair{min-height:180px}.steps{gap:20px 14px}.why-grid{grid-template-columns:1fr 1fr}.why-card{padding:17px}.contact-panel{padding:26px 18px}.contact-panel h2{font-size:32px}.form{padding:20px 16px}.footer-inner{align-items:flex-start;flex-direction:column}.mobile-cta{display:flex;position:fixed;bottom:12px;left:12px;right:12px;z-index:20}.mobile-cta .btn{width:100%;box-shadow:0 8px 30px rgba(20,40,28,.25)}footer{padding-bottom:88px}}
+  </style>
+</head>
+<body>
+<canvas id="snow" aria-hidden="true"></canvas>
+<header class="topbar"><div class="wrap nav">
+  <a class="brand" href="#">SARDOR <span>CLEAN</span></a>
+  <nav class="navlinks"><a href="#services">Услуги</a><a href="#works">Наши работы</a><a href="#process">Как работаем</a><a href="#faq">Вопросы</a><a href="#contacts">Контакты</a></nav>
+  <div class="navright"><a class="phone" href="tel:+79170334872">8 917 033-48-72</a><a class="btn" href="#contacts">Оставить заявку <span>↗</span></a></div>
+</div></header>
+<main>
+  <div class="wrap hero">
+    <div><div class="eyebrow"><span class="dot"></span> Химчистка мебели · Тольятти</div>
+      <h1>Чистота, которую <em>видно.</em></h1>
+      <p class="lead">Профессиональная химчистка мягкой мебели с выездом на дом. Помогаем вернуть диванам, креслам и матрасам ухоженный вид.</p>
+      <div class="hero-actions"><a class="btn" href="#contacts">Рассчитать стоимость <span>↗</span></a><a class="btn light" href="#works">Посмотреть работы</a></div>
+      <div class="trustline"><span>Выезд на дом</span><span>Оценка по фото</span><span>Работа по записи</span></div>
+    </div>
+    <div class="hero-visual">
+      <img src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?auto=format&fit=crop&w=1200&q=85" alt="Уютная мягкая мебель в светлом интерьере">
+      <div class="visual-tag">SARDOR CLEAN · ТОЛЬЯТТИ</div><div class="visual-note">Свежесть начинается с деталей</div>
+    </div>
+  </div>
+
+  <section id="services"><div class="wrap">
+    <div class="section-head"><div><div class="kicker">Наши услуги</div><h2>Вернём мебели<br>ухоженный вид</h2></div><p>Подбираем способ обработки с учётом материала, состояния обивки и характера загрязнений.</p></div>
+    <div class="services">
+      <article class="service"><div class="service-icon">▱</div><h3>Диваны</h3><p>Чистка прямых, угловых и модульных диванов.</p></article>
+      <article class="service"><div class="service-icon">▰</div><h3>Кресла</h3><p>Обработка сидений, спинок и подлокотников.</p></article>
+      <article class="service"><div class="service-icon">▤</div><h3>Матрасы</h3><p>Очистка поверхности от бытовых загрязнений.</p></article>
+      <article class="service"><div class="service-icon">▥</div><h3>Стулья и другое</h3><p>Стулья, пуфы, изголовья и мягкие панели.</p></article>
+    </div>
+  </div></section>
+
+  <section class="gallery" id="works"><div class="wrap">
+    <div class="section-head"><div><div class="kicker">Результат в деталях</div><h2>Работы до и после</h2></div></div>
+    <div class="gallery-grid">
+      <article class="gallery-card"><div class="gallery-pair"><div class="photo-placeholder">До чистки</div><div class="photo-placeholder after">После чистки</div></div><div class="gallery-info"><strong>Химчистка дивана</strong></div></article>
+      <article class="gallery-card"><div class="gallery-pair"><div class="photo-placeholder">До чистки</div><div class="photo-placeholder after">После чистки</div></div><div class="gallery-info"><strong>Химчистка кресла или матраса</strong></div></article>
+    </div>
+  </div></section>
+
+  <section id="process"><div class="wrap">
+    <div class="section-head"><div><div class="kicker">Просто и удобно</div><h2>Как проходит заказ</h2></div><p>От первого сообщения до готового результата — без необходимости перевозить мебель.</p></div>
+    <div class="steps">
+      <div class="step"><div class="step-num">01 / ЗАЯВКА</div><h3>Расскажите о мебели</h3><p>Оставьте контакты и при желании отправьте мастеру фотографии.</p></div>
+      <div class="step"><div class="step-num">02 / ОЦЕНКА</div><h3>Уточним детали</h3><p>Обсудим тип мебели, размеры, материал и состояние обивки.</p></div>
+      <div class="step"><div class="step-num">03 / ВЫЕЗД</div><h3>Приедем к вам</h3><p>Согласуем удобное время и проведём работу на месте.</p></div>
+      <div class="step"><div class="step-num">04 / РЕЗУЛЬТАТ</div><h3>Проверим работу</h3><p>Покажем результат и подскажем рекомендации по уходу.</p></div>
+    </div>
+  </div></section>
+
+  <section class="why"><div class="wrap">
+    <div class="section-head"><div><div class="kicker">Sardor Clean</div><h2>Внимание к каждой детали</h2></div><p>Честно рассказываем о процессе и заранее объясняем, от чего зависит результат обработки.</p></div>
+    <div class="why-grid">
+      <div class="why-card"><b>Профессиональное оборудование</b><p>Используем оборудование для экстракторной чистки мягкой мебели.</p></div>
+      <div class="why-card"><b>Подход к материалу</b><p>Учитываем особенности обивки и состояние изделия перед обработкой.</p></div>
+      <div class="why-card"><b>Честная оценка</b><p>Не обещаем невозможного: результат зависит от типа и давности загрязнений.</p></div>
+      <div class="why-card"><b>Удобный выезд</b><p>Проводим химчистку у вас дома — мебель не нужно никуда перевозить.</p></div>
+    </div>
+  </div></section>
+
+  <section id="faq"><div class="wrap faq-grid">
+    <div><div class="kicker">FAQ</div><h2>Частые вопросы</h2><p style="color:var(--muted);line-height:1.65">Если не нашли ответ — напишите нам, поможем разобраться.</p><a class="btn" href="https://t.me/Sardor_Clean" target="_blank" rel="noopener">Задать вопрос в Telegram ↗</a></div>
+    <div class="faq-list">
+      <details><summary>Сколько стоит химчистка?</summary><p>Стоимость рассчитывается индивидуально и зависит от вида и размера мебели, материала обивки и степени загрязнения. Для предварительной оценки отправьте фотографию.</p></details>
+      <details><summary>Сколько времени занимает работа?</summary><p>Продолжительность зависит от размера мебели, материала и объёма загрязнений. Точное время можно оценить после уточнения деталей.</p></details>
+      <details><summary>Сколько мебель будет сохнуть?</summary><p>Время высыхания зависит от ткани, степени увлажнения, температуры и вентиляции помещения. Мастер подскажет ориентировочное время после чистки.</p></details>
+      <details><summary>Можно ли удалить старые пятна?</summary><p>Многие пятна можно обработать, но результат зависит от их происхождения, давности и состояния ткани. Абсолютную гарантию удаления каждого пятна дать нельзя.</p></details>
+      <details><summary>Нужно ли выносить мебель?</summary><p>Нет, химчистка проводится непосредственно у вас дома.</p></details>
+    </div>
+  </div></section>
+
+  <section class="contact" id="contacts"><div class="wrap contact-panel">
+    <div><div class="kicker">Запись на химчистку</div><h2>Давайте вернём мебели свежесть</h2><p>Оставьте заявку — уточним детали, ответим на вопросы и подготовим индивидуальный расчёт стоимости.</p>
+      <div class="contact-links"><a href="tel:+79170334872">↗ 8 917 033-48-72</a><a href="https://t.me/Sardor_Clean" target="_blank" rel="noopener">↗ Telegram: @Sardor_Clean</a><a href="https://www.instagram.com/sardor_clean/" target="_blank" rel="noopener">↗ Instagram: @sardor_clean</a><a href="https://vk.ru/id200000763434" target="_blank" rel="noopener">↗ ВКонтакте</a></div>
+    </div>
+    <form class="form" id="leadForm"><h3>Оставить заявку</h3>
+      <div class="field"><label for="name">Ваше имя</label><input id="name" name="name" placeholder="Как к вам обращаться" required></div>
+      <div class="field"><label for="phone">Номер телефона</label><input id="phone" name="phone" type="tel" placeholder="+7 ___ ___-__-__" required></div>
+      <div class="field"><label for="details">Комментарий (необязательно)</label><textarea id="details" name="details" placeholder="Размер, загрязнения, удобное время..."></textarea></div>
+      <button class="btn" type="submit">Отправить заявку ↗</button>
+      <p class="fineprint">Заявка сразу поступит администратору в Telegram. Отправляя заявку, вы соглашаетесь на обработку указанных данных для ответа на обращение.</p>
+      <p id="formStatus" class="fineprint" role="status"></p>
+    </form>
+  </div></section>
+</main>
+<footer><div class="wrap footer-inner"><div class="footer-brand">SARDOR CLEAN</div><div>Химчистка мягкой мебели с выездом на дом · Тольятти</div><div>© <span id="year"></span> Sardor Clean</div></div></footer>
+<div class="mobile-cta"><a class="btn" href="#contacts">Рассчитать стоимость ↗</a></div>
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+  document.getElementById('leadForm').addEventListener('submit', async function(e){
+    e.preventDefault();
+    const form = this;
+    const button = form.querySelector('button[type=submit]');
+    const status = document.getElementById('formStatus');
+    const data = new FormData(form);
+    button.disabled = true;
+    button.textContent = 'Отправляем...';
+    status.textContent = '';
+    try {
+      const response = await fetch('/api/requests', {
+        method: 'POST', headers: {'Content-Type':'application/json'},
+        body: JSON.stringify({name:data.get('name'), phone:data.get('phone'), details:data.get('details') || ''})
+      });
+      const result = await response.json();
+      if (!response.ok) throw new Error(result.detail || 'Не удалось отправить заявку');
+      status.textContent = 'Заявка отправлена! Мы скоро свяжемся с вами.';
+      form.reset();
+    } catch (error) {
+      status.textContent = 'Не удалось отправить заявку. Попробуйте ещё раз или напишите нам в Telegram.';
+    } finally {
+      button.disabled = false;
+      button.textContent = 'Отправить заявку ↗';
+    }
+  });
+</script>
+<script>
+(() => {
+  const canvas = document.getElementById('snow');
+  const ctx = canvas.getContext('2d');
+  let width = 0, height = 0;
+  const flakes = [];
+  const count = Math.min(110, Math.max(45, Math.floor(window.innerWidth / 12)));
+
+  function resize() {
+    const dpr = Math.min(window.devicePixelRatio || 1, 2);
+    width = window.innerWidth;
+    height = window.innerHeight;
+    canvas.width = Math.floor(width * dpr);
+    canvas.height = Math.floor(height * dpr);
+    canvas.style.width = width + 'px';
+    canvas.style.height = height + 'px';
+    ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+  }
+
+  function makeFlake(randomY = true) {
+    return {
+      x: Math.random() * width,
+      y: randomY ? Math.random() * height : -10,
+      r: Math.random() * 2.2 + 0.7,
+      speed: Math.random() * 0.8 + 0.35,
+      drift: Math.random() * 0.7 - 0.35,
+      sway: Math.random() * 0.018 + 0.006,
+      phase: Math.random() * Math.PI * 2,
+      alpha: Math.random() * 0.45 + 0.35
+    };
+  }
+
+  function draw() {
+    ctx.clearRect(0, 0, width, height);
+    for (const f of flakes) {
+      f.phase += f.sway;
+      f.y += f.speed;
+      f.x += f.drift + Math.sin(f.phase) * 0.45;
+      if (f.y > height + 8) Object.assign(f, makeFlake(false));
+      if (f.x < -8) f.x = width + 8;
+      if (f.x > width + 8) f.x = -8;
+      ctx.beginPath();
+      ctx.fillStyle = `rgba(255,255,255,${f.alpha})`;
+      ctx.shadowColor = 'rgba(255,255,255,.7)';
+      ctx.shadowBlur = 5;
+      ctx.arc(f.x, f.y, f.r, 0, Math.PI * 2);
+      ctx.fill();
+    }
+    ctx.shadowBlur = 0;
+    requestAnimationFrame(draw);
+  }
+
+  resize();
+  for (let i = 0; i < count; i++) flakes.push(makeFlake());
+  window.addEventListener('resize', resize);
+  draw();
+})();
+</script>
+</body>
+</html>
